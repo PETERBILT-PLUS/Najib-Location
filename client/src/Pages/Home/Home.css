@@ -1,0 +1,41 @@
+section.hero-section {
+    background-image: url("../../assets/Hero-Section-Images.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: darken;
+    background-color: rgba(0, 0, 0, 0.35);
+
+    -moz-background-image: url("../../assets/Hero-Section-Images.jpg");
+    -moz-background-repeat: no-repeat;
+    -moz-background-position: center;
+    -moz-background-size: cover;
+
+    -webkit-background-image: url("../../assets/Hero-Section-Images.jpg");
+    -webkit-background-repeat: no-repeat;
+    -webkit-background-position: center;
+    -webkit-background-size: cover;
+}
+
+span.name {
+    color: var(--light-blue);
+}
+
+button.hero-section-btn {
+    padding: 16px 24px;
+    color: var(--light-blue);
+    border: solid 2px var(--light-blue);
+    border-radius: 10px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: 250ms ease-in-out all;
+}
+
+button.hero-section-btn:hover {
+    background-color: var(--light-blue);
+    color: var(--light);
+}
+
+section.cars-section {
+    background-color: var(--light);
+}

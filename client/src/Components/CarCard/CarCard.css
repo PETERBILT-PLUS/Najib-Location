@@ -1,0 +1,24 @@
+div.flex.h-full {
+    padding: 0;
+}
+
+img {
+    background-size: cover;
+}
+
+button.order-btn {
+    color: var(--blue);
+    background: transparent;
+    border: solid 2px var(--blue);
+    padding: 14px 22px;
+    border-radius: 9px;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    cursor: pointer;
+    transition: all 250ms ease-in-out;
+}
+
+button.order-btn:hover {
+    background-color: var(--blue);
+    color: var(--light);
+}
