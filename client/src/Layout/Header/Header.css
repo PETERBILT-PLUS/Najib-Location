@@ -1,86 +1,29 @@
-header.header,
-header.header>nav {
-    background-color: var(--light);
+header > nav > div > div.navbar-collapse {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    background-color: #fff;
 }
 
-img {
-    transform: scale(1.5);
-}
-
-a {
-    font-size: 1.3em;
-    padding: 5px 13px;
+span.sr-only {
+    display: none;
 }
 
 a.nav-link {
-    color: var(--gray);
-    position: relative;
+    color: #000;
+    font-size: 1.15rem;
+    transition: color 0.3s ease;
 }
 
-a.nav-link::after {
-    content: "";
-    position: absolute;
-    bottom: -6px;
-    left: 0;
-    background-color: var(--gray);
-    width: 0%;
-    height: 3px;
-    border-radius: 5px;
-    transition: 250ms ease-in-out width;
-}
-
-a.nav-link:hover::after {
-    width: 100%;
+a.nav-link:hover {
+    color: var(--blue);
 }
 
 a.nav-link-active {
     color: var(--blue);
-    position: relative;
+    font-size: 1.15rem;
 }
 
-a.nav-link-active::after {
-    content: "";
-    position: absolute;
-    bottom: -6px;
-    left: 0;
-    background-color: var(--blue);
-    width: 0%;
-    height: 3px;
-    border-radius: 5px;
-    transition: 250ms ease-in-out width;
-}
-
-a.nav-link-active:hover::after {
-    width: 100%;
-}
-
-h3.header-info {
+a.nav-link-active:hover {
     color: var(--blue);
-}
-
-div.drop-down {
-    position: absolute;
-    margin-top: 35px;
-    top: 0;
-    width: 160px;
-    height: auto;
-    background-color: var(--light);
-    border: solid 1px var(--gray);
-    border-radius: 8px;
-}
-
-div.drop-down>div.part {
-    width: 100%;
-    color: var(--gray);
-    text-align: center;
-    cursor: pointer;
-    padding: 12px 16px;
-    border-radius: inherit;
-    border: solid 1px var(--gray);
-    transition: all 250ms ease-in-out;
-}
-
-div.drop-down>div.part:hover {
-    background-color: var(--light-blue);
-    color: var(--light);
 }

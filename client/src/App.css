@@ -1,0 +1,15 @@
+:root {
+    --blue: #2973B2;
+    --light-blue: #48A6A7;
+    --gray: #2A2A2A;
+    --black: #121212;
+    --light: #fcfcfc;
+}
+
+* {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}

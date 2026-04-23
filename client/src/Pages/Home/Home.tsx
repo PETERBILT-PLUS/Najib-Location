@@ -87,7 +87,7 @@ function Home() {
                 <meta name="keywords" content="location voiture Marrakech, louer voiture Marrakech, voiture pas cher Marrakech, location auto Marrakech, Marrakech car rental" />
                 <link rel="canonical" href="https://www.votre-site.com" />
             </Helmet>
-            <section className="hero-section">
+            <section className="hero-section pt-20">
                 <div className="py-22 min-h-screen container mx-auto px-4 sm:px-24 hero-section flex flex-col justify-start items-center md:justify-start md:items-start">
                     <h1 className="text-2xl md:text-4xl text-white font-semibold">
                         Bienvenue Chez <span className="name">Ismaail Rent Car</span>
@@ -99,7 +99,7 @@ function Home() {
                         l’esprit tranquille, dès aujourd’hui.
                     </p>
                     <br />
-                    <button type="button" className="hero-section-btn" onClick={scrollIntoCars}>Choisir votre Véhicule</button>
+                    <button type="button" className="hero-section-btn text-blue-500" onClick={scrollIntoCars}>Choisir Votre Véhicule</button>
                 </div>
             </section>
 
