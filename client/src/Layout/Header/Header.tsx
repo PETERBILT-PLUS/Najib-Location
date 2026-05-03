@@ -2,6 +2,8 @@ import { Dropdown, Navbar, NavbarBrand, NavbarCollapse, NavbarToggle } from "flo
 import { NavLink, redirect, useNavigate } from "react-router-dom";
 import LOGO from "../../assets/Rent_Car-Ismaail.png";
 import { CiSettings } from "react-icons/ci";
+import { BsWhatsapp } from "react-icons/bs";
+
 import "./Header.css";
 import { useState } from "react";
 
@@ -11,8 +13,12 @@ function Header() {
     const [isSettingsOpen, setIsSettingsOpen] = useState<boolean>(false);
     const navigate = useNavigate();
 
+    const message = "Bonjour, je suis intéressé par vos services de location de voitures. Pouvez-vous me fournir plus d'informations ?";
+    const whatsappUrl = `https://wa.me/${import.meta.env.VITE_WHASTAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+
+
     return (
-        <header className="header">
+        <header className="header relative">
             <Navbar rounded className="container relative mx-auto px-4 sm:px-24">
                 <NavbarBrand as={NavLink} onClick={() => redirect("/")}>
                     <img src={LOGO} className="h-24" alt="LOGO" />
@@ -49,6 +55,15 @@ function Header() {
                     <NavLink to="/contact" className={({ isActive }) => isActive ? "nav-link-active" : "nav-link"}>Contact</NavLink>
                 </NavbarCollapse>
             </Navbar>
+
+            <div className="flex flex-row justify-center items-center fixed bottom-8 right-8">
+
+                <a href={whatsappUrl} target="_blank" rel=" noreferrer" className="flex flex-row justify-center items-center w-24 bg-green-500 hover:bg-green-600 text-white rounded-full py-5 shadow-lg">
+                    <button type="button" className="w-full text-center flex flex-row justify-center items-center">
+                        <BsWhatsapp size={24} />
+                    </button>
+                </a>
+            </div>
         </header>
     );
 }
