@@ -1,0 +1,21 @@
+{
+  "title": "Our Services",
+  "services": [
+    {
+      "title": "Car Rental",
+      "description": "We offer a wide range of vehicles to meet all your needs, from economical city cars to high-end SUVs."
+    },
+    {
+      "title": "Maintenance and Repair",
+      "description": "Our experts take care of your vehicle with regular maintenance services and fast repairs."
+    },
+    {
+      "title": "24/7 Assistance",
+      "description": "We accompany you on the road with assistance available 24/7 in case of breakdown or emergency."
+    },
+    {
+      "title": "Professional Cleaning",
+      "description": "Interior and exterior cleaning service for a vehicle that is always immaculate."
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "title": "Contact Us",
+  "description": "We would be delighted to answer all your questions or concerns. Feel free to contact us.",
+  "address": "Address",
+  "addressLine1": "123 Business Street,",
+  "addressLine2": "75000 Paris, France",
+  "phone": "Phone",
+  "phoneNumber": "+33 1 23 45 67 89",
+  "email": "Email",
+  "emailAddress": "contact@mysite.com",
+  "openingHours": "Opening Hours",
+  "mondayFriday": "Monday - Friday: 9am - 6pm",
+  "saturday": "Saturday: 10am - 4pm",
+  "sunday": "Sunday: Closed",
+  "getInTouch": "Get In Touch",
+  "ctaDescription": "Ready to get started? Contact us today and let us help you find the perfect vehicle for your needs.",
+  "callUs": "Call Us",
+  "emailUs": "Email Us",
+  "footer": "We look forward to helping you. See you soon!"
+}

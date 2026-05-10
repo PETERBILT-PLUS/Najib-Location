@@ -1,0 +1,13 @@
+{
+  "carIdNotDefined": "Car ID is not defined",
+  "carIdNotDefined2": "Car Id is not defined",
+  "phone": "Phone",
+  "email": "Email",
+  "startDate": "Start Date",
+  "endDate": "End Date",
+  "name": "Name",
+  "reserve": "Reserve Now",
+  "reservationForm": "Book This Car",
+  "confirmReservation": "Confirm Reservation",
+  "reservationDetails": "Reservation Details"
+}

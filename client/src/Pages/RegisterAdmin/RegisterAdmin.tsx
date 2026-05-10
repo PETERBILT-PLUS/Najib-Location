@@ -114,10 +114,11 @@ function RegisterAdmin() {
                             name="password"
                             type="password"
                             icon={HiLockClosed}
-                            placeholder="••••••••"
+                            placeholder="Entrez votre mot de passe"
                             value={values.password}
                             onChange={handleChange}
                             onBlur={handleBlur}
+                            autoComplete="new-password"
                             color={errors.password && touched.password ? "failure" : "gray"}
                             helperText={
                                 errors.password && touched.password ? (
@@ -139,6 +140,7 @@ function RegisterAdmin() {
                             value={values.admin_secret}
                             onChange={handleChange}
                             onBlur={handleBlur}
+                            autoComplete="off"
                             color={errors.admin_secret && touched.admin_secret ? "failure" : "gray"}
                             helperText={
                                 errors.admin_secret && touched.admin_secret ? (
@@ -154,8 +156,7 @@ function RegisterAdmin() {
                         type="submit"
                         isProcessing={isSubmitting}
                         disabled={isSubmitting}
-                        className="w-full"
-                        gradientDuoTone="purpleToBlue"
+                        className="w-full h-16 text-white bg-sky-500 hover:bg-sky-700 transition-colors duration-200"
                         size="lg"
                     >
                         {isSubmitting ? "Enregistrement..." : "Créer un compte"}

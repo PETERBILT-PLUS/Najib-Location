@@ -2,15 +2,14 @@ import { FooterBrand, FooterCopyright, FooterDivider, FooterLinkGroup } from "fl
 import { FaFacebook } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
 import { BsWhatsapp } from "react-icons/bs";
-
-
-
+import { useTranslation } from "react-i18next";
 import LOGO from "../../assets/Rent_Car-Ismaail.png";
 import "./Footer.css";
 import { Link } from "react-router-dom";
 
 
 function Footer() {
+    const { t } = useTranslation();
     return (
         <footer className="footer">
             <div className="w-full text-center container mx-auto px-4 sm:px-24">
@@ -27,9 +26,9 @@ function Footer() {
 
 
                     <FooterLinkGroup className="flex flex-col justify-evenly items-center md:flex-row md:justify-evenly md:items-center gap-x-10 text-md text-gray-700">
-                        <Link to="/">Accueil</Link>
-                        <Link to="/service">Service</Link>
-                        <Link to="/contact">Contact</Link>
+                        <Link className="text-gray-700 font-bold italic" to="/">{t("footer.home")}</Link>
+                        <Link className="text-gray-700 font-bold italic" to="/service">{t("footer.service")}</Link>
+                        <Link className="text-gray-700 font-bold italic" to="/contact">{t("footer.contact")}</Link>
                     </FooterLinkGroup>
 
                 </div>
@@ -41,12 +40,12 @@ function Footer() {
                 {/* for social media */}
                 <div className="flex flex-col justify-center items-center">
 
-                    <h3 className="text-center pb-6 text-lg font-bold underline text-gray-700">Voir Notre Social Media</h3>
+                    <h3 className="text-center pb-6 text-lg font-bold underline text-gray-700">{t("footer.socialMedia")}</h3>
 
 
                     <div className="flex justify-end space-x-4 pt-4 pb-16">
 
-                        <FooterLinkGroup className="flex flex-col justify-evenly items-center md:flex-row md:justify-evenly md:items-center gap-x-16 text-md text-gray-600">
+                        <FooterLinkGroup className="gap-y-5 flex flex-col justify-evenly items-center md:flex-row md:justify-evenly md:items-center gap-x-16 text-md text-gray-600">
                             <Link to="#" className="text-gray-600 hover:text-blue-500">
                                 <FaFacebook color="#1877F2" size={25} />
                             </Link>

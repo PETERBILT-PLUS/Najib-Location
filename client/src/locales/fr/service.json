@@ -1,0 +1,21 @@
+{
+  "title": "Nos Services",
+  "services": [
+    {
+      "title": "Location de Voitures",
+      "description": "Nous proposons une large gamme de véhicules pour répondre à tous vos besoins, de la citadine économique au SUV haut de gamme."
+    },
+    {
+      "title": "Entretien et Réparation",
+      "description": "Nos experts prennent soin de votre véhicule avec des services d'entretien réguliers et de réparations rapides."
+    },
+    {
+      "title": "Assistance 24h/24",
+      "description": "Nous vous accompagnons sur la route avec une assistance disponible 24h/24 et 7j/7 en cas de panne ou d'urgence."
+    },
+    {
+      "title": "Nettoyage Professionnel",
+      "description": "Service de nettoyage intérieur et extérieur pour un véhicule toujours impeccable."
+    }
+  ]
+}

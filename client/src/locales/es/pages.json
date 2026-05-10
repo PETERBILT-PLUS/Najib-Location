@@ -1,0 +1,61 @@
+{
+  "home": {
+    "title": "Alquiler de Autos en Marrakech - Meil",
+    "description": "Alquiler de autos en el aeropuerto de Marrakech – Alquila un auto económico en línea. Elige tu vehículo y reserva fácilmente en solo unos clicks.",
+    "keywords": "alquiler autos Marrakech, alquilar auto Marrakech, auto económico Marrakech, alquiler de autos Marrakech",
+    "serverError": "¡Oops! Error Interno del Servidor",
+    "opsServerError": "Error del Servidor",
+    "vehicles": "Nuestros Vehículos",
+    "noCarsAvailable": "No hay autos disponibles."
+  },
+  "service": {
+    "title": "Nuestros Servicios",
+    "services": [
+      {
+        "title": "Alquiler de Autos",
+        "description": "Ofrecemos una amplia gama de vehículos para satisfacer todas tus necesidades, desde autos económicos hasta SUVs de lujo."
+      },
+      {
+        "title": "Mantenimiento y Reparación",
+        "description": "Nuestros expertos cuidan tu vehículo con servicios de mantenimiento regular y reparaciones rápidas."
+      },
+      {
+        "title": "Asistencia 24/7",
+        "description": "Te acompañamos en el camino con asistencia disponible 24/7 en caso de avería o emergencia."
+      },
+      {
+        "title": "Limpieza Profesional",
+        "description": "Servicio de limpieza interior y exterior para un vehículo siempre impecable."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contáctanos",
+    "description": "Nos encantaría responder todas tus preguntas o inquietudes. No dudes en contactarnos.",
+    "address": "Dirección",
+    "addressLine1": "123 Calle de Negocios,",
+    "addressLine2": "75000 París, Francia",
+    "phone": "Teléfono",
+    "phoneNumber": "+33 1 23 45 67 89",
+    "email": "Correo Electrónico",
+    "emailAddress": "contact@mysite.com",
+    "openingHours": "Horario de Atención",
+    "mondayFriday": "Lunes - Viernes: 9am - 6pm",
+    "saturday": "Sábado: 10am - 4pm",
+    "sunday": "Domingo: Cerrado",
+    "footer": "Esperamos poder ayudarte. ¡Nos vemos pronto!"
+  },
+  "getSingleCar": {
+    "carIdNotDefined": "ID del auto no está definido",
+    "carIdNotDefined2": "ID del auto no está definido",
+    "phone": "Teléfono",
+    "email": "Correo Electrónico",
+    "startDate": "Fecha de Inicio",
+    "endDate": "Fecha de Finalización",
+    "name": "Nombre",
+    "reserve": "Reservar Ahora",
+    "reservationForm": "Reserva este Auto",
+    "confirmReservation": "Confirmar Reserva",
+    "reservationDetails": "Detalles de la Reserva"
+  }
+}

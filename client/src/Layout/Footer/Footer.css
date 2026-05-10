@@ -1,10 +1,10 @@
 footer.footer {
-    background-image: linear-gradient(to bottom right, #fefefecc, var(--blue));
+    background-image: linear-gradient(to bottom right, var(--blue), #fefefecc, var(--blue));
     background-blend-mode: darken;
     background-color: rgba(0, 0, 0, 0.2);
 }
 
-footer.footer > a {
+footer.footer>a {
     color: var;
     font-size: 1.15rem;
     transition: color 0.3s ease;

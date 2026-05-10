@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import { toast } from "react-toastify";
 import axios, { type AxiosResponse } from "axios";
 import { Spinner } from "flowbite-react";
+import { useTranslation } from "react-i18next";
 
 // Install modules (required in v9)
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
@@ -18,6 +19,7 @@ SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
 ];*/
 
 function GetSingleCar() {
+    const { t } = useTranslation();
     const params = useParams();
     const [isMobile, setIsMobile] = useState<boolean>(false);
     const [car, setCar] = useState<any>({});
@@ -44,7 +46,7 @@ function GetSingleCar() {
         const getSingleCar = async () => {
             try {
                 const carId = params.carId;
-                if (!carId) toast.warning("Voiture Id n'est pas définé");
+                if (!carId) toast.warning(t("getSingleCar.carIdNotDefined"));
                 const response: AxiosResponse<{ success: boolean, car: any }> = await axios.get(`${SERVER}/user/get-single-car/${carId}`);
                 if (response.data.success) {
                     console.log(response.data);
@@ -88,7 +90,7 @@ function GetSingleCar() {
         try {
             e.preventDefault();
             setFormLoading(true);
-            if (!form.carId) return toast.warning("Voiture id n'est Pas Définé")
+            if (!form.carId) return toast.warning(t("getSingleCar.carIdNotDefined2"))
             const response: AxiosResponse<{ success: boolean, message?: string }> = await axios.post(`${SERVER}/user/create-reservation`, form);
             if (response.data.success) {
                 toast.success(response.data?.message);
@@ -157,12 +159,12 @@ function GetSingleCar() {
 
                 <div className="mt-12 lg:mt-0 bg-white dark:bg-gray-800 p-8 rounded-xl shadow-xl">
                     <h3 className="text-xl lg:text-2xl font-semibold text-gray-800 dark:text-white mb-6">
-                        Réservez cette voiture
+                        {t("getSingleCar.reservationForm")}
                     </h3>
 
                     <form className="space-y-6" onSubmit={(e: React.FormEvent<HTMLFormElement>) => handleSubmit(e)}>
                         <div>
-                            <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Date de début</label>
+                            <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">{t("getSingleCar.startDate")}</label>
                             <input
                                 onChange={(e: React.ChangeEvent<HTMLInputElement>) => handleChange(e)}
                                 type="date"
@@ -173,7 +175,7 @@ function GetSingleCar() {
                         </div>
 
                         <div>
-                            <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Date de fin</label>
+                            <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">{t("getSingleCar.endDate")}</label>
                             <input
                                 onChange={(e: React.ChangeEvent<HTMLInputElement>) => handleChange(e)}
                                 type="date"
@@ -184,7 +186,7 @@ function GetSingleCar() {
                         </div>
 
                         <div>
-                            <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Nom complet</label>
+                            <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">{t("getSingleCar.name")}</label>
                             <input
                                 onChange={(e: React.ChangeEvent<HTMLInputElement>) => handleChange(e)}
                                 type="text"
@@ -196,7 +198,7 @@ function GetSingleCar() {
                         </div>
 
                         <div>
-                            <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Téléphone</label>
+                            <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">{t("getSingleCar.phone")}</label>
                             <input
                                 onChange={(e: React.ChangeEvent<HTMLInputElement>) => handleChange(e)}
                                 type="tel"
@@ -208,7 +210,7 @@ function GetSingleCar() {
                         </div>
 
                         <div>
-                            <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">G-mail</label>
+                            <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">{t("getSingleCar.email")}</label>
                             <input
                                 onChange={(e: React.ChangeEvent<HTMLInputElement>) => handleChange(e)}
                                 type="email"
@@ -226,7 +228,7 @@ function GetSingleCar() {
 
                             {formLoading ? (
                                 <Spinner size="md" />
-                            ) : ("Réserver maintenant")}
+                            ) : (t("getSingleCar.reserve"))}
                         </button>
                     </form>
                 </div>

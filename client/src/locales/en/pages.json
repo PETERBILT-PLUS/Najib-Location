@@ -1,0 +1,61 @@
+{
+  "home": {
+    "title": "Car Rental in Marrakech - Meil",
+    "description": "Car rental at Marrakech airport – Rent a cheap car online. Choose your vehicle and book easily in just a few clicks.",
+    "keywords": "car rental Marrakech, rent car Marrakech, cheap car Marrakech, car rental Marrakech, Marrakech car rental",
+    "serverError": "Oops! Internal Server Error",
+    "opsServerError": "Oops Server Error",
+    "vehicles": "Our Vehicles",
+    "noCarsAvailable": "No cars available."
+  },
+  "service": {
+    "title": "Our Services",
+    "services": [
+      {
+        "title": "Car Rental",
+        "description": "We offer a wide range of vehicles to meet all your needs, from economical city cars to high-end SUVs."
+      },
+      {
+        "title": "Maintenance and Repair",
+        "description": "Our experts take care of your vehicle with regular maintenance services and fast repairs."
+      },
+      {
+        "title": "24/7 Assistance",
+        "description": "We accompany you on the road with assistance available 24/7 in case of breakdown or emergency."
+      },
+      {
+        "title": "Professional Cleaning",
+        "description": "Interior and exterior cleaning service for a vehicle that is always immaculate."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contact Us",
+    "description": "We would be delighted to answer all your questions or concerns. Feel free to contact us.",
+    "address": "Address",
+    "addressLine1": "123 Business Street,",
+    "addressLine2": "75000 Paris, France",
+    "phone": "Phone",
+    "phoneNumber": "+33 1 23 45 67 89",
+    "email": "Email",
+    "emailAddress": "contact@mysite.com",
+    "openingHours": "Opening Hours",
+    "mondayFriday": "Monday - Friday: 9am - 6pm",
+    "saturday": "Saturday: 10am - 4pm",
+    "sunday": "Sunday: Closed",
+    "footer": "We look forward to helping you. See you soon!"
+  },
+  "getSingleCar": {
+    "carIdNotDefined": "Car ID is not defined",
+    "carIdNotDefined2": "Car Id is not defined",
+    "phone": "Phone",
+    "email": "Email",
+    "startDate": "Start Date",
+    "endDate": "End Date",
+    "name": "Name",
+    "reserve": "Reserve Now",
+    "reservationForm": "Book This Car",
+    "confirmReservation": "Confirm Reservation",
+    "reservationDetails": "Reservation Details"
+  }
+}

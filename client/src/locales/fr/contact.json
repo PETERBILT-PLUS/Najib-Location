@@ -1,0 +1,20 @@
+{
+  "title": "Contactez-nous",
+  "description": "Nous serions ravis de répondre à toutes vos questions ou préoccupations. N'hésitez pas à nous contacter.",
+  "address": "Adresse",
+  "addressLine1": "123 Rue de l'Entreprise,",
+  "addressLine2": "75000 Paris, France",
+  "phone": "Téléphone",
+  "phoneNumber": "+33 1 23 45 67 89",
+  "email": "Email",
+  "emailAddress": "contact@mysite.com",
+  "openingHours": "Horaires d'ouverture",
+  "mondayFriday": "Lundi - Vendredi: 9h00 - 18h00",
+  "saturday": "Samedi: 10h00 - 16h00",
+  "sunday": "Dimanche: Fermé",
+  "getInTouch": "Entrer en Contact",
+  "ctaDescription": "Prêt à commencer ? Contactez-nous dès aujourd'hui et laissez-nous vous aider à trouver le véhicule parfait pour vos besoins.",
+  "callUs": "Appelez-nous",
+  "emailUs": "Écrivez-nous",
+  "footer": "Nous sommes impatients de vous aider. À bientôt!"
+}

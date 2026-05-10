@@ -5,12 +5,14 @@ import axios, { type AxiosResponse } from "axios";
 import "./Home.css";
 import { Spinner } from "flowbite-react";
 import { Helmet } from "react-helmet-async"
+import { useTranslation } from "react-i18next";
 // add test env variable to show test cars
 // to show test cars, add VITE_TEST_CARS=true to .env file
 // to hide test cars, add VITE_TEST_CARS=false to .env file
 // and add a json file named testCars.json in the public folder with the following structure:
 
 function Home() {
+    const { t } = useTranslation();
     const [cars, setCars] = useState<any[]>([]);
     const [loading, setLoading] = useState<boolean>(false);
     const containerRef = useRef<HTMLDivElement | null>(null);
@@ -37,7 +39,7 @@ function Home() {
                     toast.warning(error.message);
                 } else {
                     console.error(error);
-                    toast.error(error?.message || "Oops! Erreur Interne du Serveur");
+                    toast.error(error?.message || t("home.serverError"));
                 }
             } finally {
                 setLoading(false);
@@ -65,7 +67,7 @@ function Home() {
                         toast.warning(error.message);
                         console.error(error);
                     } else {
-                        toast.error(error?.message || "Ops Server Error");
+                        toast.error(error?.message || t("home.opsServerError"));
                         console.error(error);
                     }
                 }
@@ -90,30 +92,28 @@ function Home() {
     return (
         <main>
             <Helmet>
-                <title>Location De Voitures Marrakech - Meil</title>
-                <meta name="description" content="Location de voitures à l'aéroport de Marrakech – Louez une voiture pas chère en ligne. Choisissez votre véhicule et réservez facilement en quelques clics." />
-                <meta name="keywords" content="location voiture Marrakech, louer voiture Marrakech, voiture pas cher Marrakech, location auto Marrakech, Marrakech car rental" />
+                <title>{t("home.title")}</title>
+                <meta name="description" content={t("home.description")} />
+                <meta name="keywords" content={t("home.keywords")} />
                 <link rel="canonical" href="https://www.votre-site.com" />
             </Helmet>
             <section className="hero-section pt-20">
                 <div className="py-22 min-h-screen container mx-auto px-4 sm:px-24 hero-section flex flex-col justify-start items-center md:justify-start md:items-start">
                     <h1 className="text-2xl md:text-4xl text-white font-semibold">
-                        Bienvenue Chez <span className="name">Ismaail Rent Car</span>
+                        {t("home.hero.welcome")} <span className="name">{t("home.hero.companyName")}</span>
                     </h1>
                     <br />
                     <p className="text-lg text-white font-medium text-center md:text-start w-full md:w-1/2">
-                        Ismaail Rent Car – Louez la voiture de vos rêves, où que vous soyez. Avec Ismaail Rent Car,
-                        profitez d’options de location flexibles, des véhicules fiables et un service rapide. Partez
-                        l’esprit tranquille, dès aujourd’hui.
+                        {t("home.hero.description")}
                     </p>
                     <br />
-                    <button type="button" className="hero-section-btn text-blue-500" onClick={scrollIntoCars}>Book Now !</button>
+                    <button type="button" className="hero-section-btn text-blue-500" onClick={scrollIntoCars}>{t("home.hero.bookNow")}</button>
                 </div>
             </section>
 
             <section id="cars-section" className="cars-section min-h-screen pb-24">
                 <div className="container mx-auto px-4 sm:px-24">
-                    <h2 className="text-2xl md:text-4xl text-center py-24" style={{ color: "var(--blue)" }}>Nos Véhicules</h2>
+                    <h2 className="text-2xl md:text-4xl text-center py-24" style={{ color: "var(--blue)" }}>{t("home.vehicles")}</h2>
 
 
                     {!test && loading ? (
@@ -142,7 +142,7 @@ function Home() {
                                     />
                                 ))
                             ) : (
-                                <p className="text-center w-full col-span-full">Aucune voiture Disponible.</p>
+                                <p className="text-center w-full col-span-full">{t("home.noCarsAvailable")}</p>
                             )}
                         </div>
                     )}

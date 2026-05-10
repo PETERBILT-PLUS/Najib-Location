@@ -1,0 +1,16 @@
+{
+  "title": "Location de Voitures à Marrakech - Meil",
+  "description": "Location de voitures à l'aéroport de Marrakech – Louer une voiture pas chère en ligne. Choisissez votre véhicule et réservez facilement en quelques clics.",
+  "keywords": "location voiture Marrakech, louer voiture Marrakech, voiture pas cher Marrakech, location auto Marrakech, Marrakech car rental",
+  "serverError": "Oups! Erreur Interne du Serveur",
+  "opsServerError": "Erreur du Serveur",
+  "vehicles": "Nos Véhicules",
+  "noCarsAvailable": "Aucune voiture disponible.",
+  "hero": {
+    "welcome": "Bienvenue Chez",
+    "companyName": "Ismaail Rent Car",
+    "description": "Ismaail Rent Car – Louez la voiture de vos rêves, où que vous soyez. Avec Ismaail Rent Car, profitez d'options de location flexibles, des véhicules fiables et un service rapide. Partez l'esprit tranquille, dès aujourd'hui.",
+    "bookNow": "Réserver Maintenant !"
+  }
+}
+

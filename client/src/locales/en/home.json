@@ -1,0 +1,16 @@
+{
+  "title": "Car Rental in Marrakech - Meil",
+  "description": "Car rental at Marrakech airport – Rent a cheap car online. Choose your vehicle and book easily in just a few clicks.",
+  "keywords": "car rental Marrakech, rent car Marrakech, cheap car Marrakech, car rental Marrakech, Marrakech car rental",
+  "serverError": "Oops! Internal Server Error",
+  "opsServerError": "Oops Server Error",
+  "vehicles": "Our Vehicles",
+  "noCarsAvailable": "No cars available.",
+  "hero": {
+    "welcome": "Welcome at",
+    "companyName": "Ismaail Rent Car",
+    "description": "Ismaail Rent Car – Rent the car of your dreams, wherever you are. With Ismaail Rent Car, enjoy flexible rental options, reliable vehicles and fast service. Leave with peace of mind, starting today.",
+    "bookNow": "Book Now!"
+  }
+}
+

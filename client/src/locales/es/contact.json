@@ -1,0 +1,20 @@
+{
+  "title": "Contáctanos",
+  "description": "Nos encantaría responder todas tus preguntas o inquietudes. No dudes en contactarnos.",
+  "address": "Dirección",
+  "addressLine1": "123 Calle de Negocios,",
+  "addressLine2": "75000 París, Francia",
+  "phone": "Teléfono",
+  "phoneNumber": "+33 1 23 45 67 89",
+  "email": "Correo Electrónico",
+  "emailAddress": "contact@mysite.com",
+  "openingHours": "Horario de Atención",
+  "mondayFriday": "Lunes - Viernes: 9am - 6pm",
+  "saturday": "Sábado: 10am - 4pm",
+  "sunday": "Domingo: Cerrado",
+  "getInTouch": "Ponte en Contacto",
+  "ctaDescription": "¿Listo para comenzar? Contáctanos hoy y déjanos ayudarte a encontrar el vehículo perfecto para tus necesidades.",
+  "callUs": "Llámanos",
+  "emailUs": "Envíanos un Email",
+  "footer": "Esperamos poder ayudarte. ¡Nos vemos pronto!"
+}

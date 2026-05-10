@@ -1,0 +1,16 @@
+{
+  "title": "Alquiler de Autos en Marrakech - Meil",
+  "description": "Alquiler de autos en el aeropuerto de Marrakech – Alquila un auto económico en línea. Elige tu vehículo y reserva fácilmente en solo unos clicks.",
+  "keywords": "alquiler autos Marrakech, alquilar auto Marrakech, auto económico Marrakech, alquiler de autos Marrakech",
+  "serverError": "¡Oops! Error Interno del Servidor",
+  "opsServerError": "Error del Servidor",
+  "vehicles": "Nuestros Vehículos",
+  "noCarsAvailable": "No hay autos disponibles.",
+  "hero": {
+    "welcome": "Bienvenido a",
+    "companyName": "Ismaail Alquiler de Autos",
+    "description": "Ismaail Alquiler de Autos – Alquila el auto de tus sueños, dondequiera que estés. Con Ismaail Alquiler de Autos, disfruta de opciones de alquiler flexibles, vehículos confiables y servicio rápido. Parte con tranquilidad, a partir de hoy.",
+    "bookNow": "¡Reserva Ahora!"
+  }
+}
+

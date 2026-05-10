@@ -1,0 +1,21 @@
+{
+  "title": "Nuestros Servicios",
+  "services": [
+    {
+      "title": "Alquiler de Autos",
+      "description": "Ofrecemos una amplia gama de vehículos para satisfacer todas tus necesidades, desde autos económicos hasta SUVs de lujo."
+    },
+    {
+      "title": "Mantenimiento y Reparación",
+      "description": "Nuestros expertos cuidan tu vehículo con servicios de mantenimiento regular y reparaciones rápidas."
+    },
+    {
+      "title": "Asistencia 24/7",
+      "description": "Te acompañamos en el camino con asistencia disponible 24/7 en caso de avería o emergencia."
+    },
+    {
+      "title": "Limpieza Profesional",
+      "description": "Servicio de limpieza interior y exterior para un vehículo siempre impecable."
+    }
+  ]
+}

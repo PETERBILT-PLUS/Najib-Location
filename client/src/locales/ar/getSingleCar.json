@@ -1,0 +1,13 @@
+{
+  "carIdNotDefined": "معرّف السيارة غير محدد",
+  "carIdNotDefined2": "معرّف السيارة غير محدد",
+  "phone": "الهاتف",
+  "email": "البريد الإلكتروني",
+  "startDate": "تاريخ البداية",
+  "endDate": "تاريخ الانتهاء",
+  "name": "الاسم",
+  "reserve": "احجز الآن",
+  "reservationForm": "احجز هذه السيارة",
+  "confirmReservation": "تأكيد الحجز",
+  "reservationDetails": "تفاصيل الحجز"
+}

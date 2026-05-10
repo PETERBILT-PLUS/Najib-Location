@@ -1,0 +1,61 @@
+{
+  "home": {
+    "title": "Location de Voitures à Marrakech - Meil",
+    "description": "Location de voitures à l'aéroport de Marrakech – Louer une voiture pas chère en ligne. Choisissez votre véhicule et réservez facilement en quelques clics.",
+    "keywords": "location voiture Marrakech, louer voiture Marrakech, voiture pas cher Marrakech, location auto Marrakech, Marrakech car rental",
+    "serverError": "Oups! Erreur Interne du Serveur",
+    "opsServerError": "Erreur du Serveur",
+    "vehicles": "Nos Véhicules",
+    "noCarsAvailable": "Aucune voiture disponible."
+  },
+  "service": {
+    "title": "Nos Services",
+    "services": [
+      {
+        "title": "Location de Voitures",
+        "description": "Nous proposons une large gamme de véhicules pour répondre à tous vos besoins, de la citadine économique au SUV haut de gamme."
+      },
+      {
+        "title": "Entretien et Réparation",
+        "description": "Nos experts prennent soin de votre véhicule avec des services d'entretien réguliers et de réparations rapides."
+      },
+      {
+        "title": "Assistance 24h/24",
+        "description": "Nous vous accompagnons sur la route avec une assistance disponible 24h/24 et 7j/7 en cas de panne ou d'urgence."
+      },
+      {
+        "title": "Nettoyage Professionnel",
+        "description": "Service de nettoyage intérieur et extérieur pour un véhicule toujours impeccable."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contactez-nous",
+    "description": "Nous serions ravis de répondre à toutes vos questions ou préoccupations. N'hésitez pas à nous contacter.",
+    "address": "Adresse",
+    "addressLine1": "123 Rue de l'Entreprise,",
+    "addressLine2": "75000 Paris, France",
+    "phone": "Téléphone",
+    "phoneNumber": "+33 1 23 45 67 89",
+    "email": "Email",
+    "emailAddress": "contact@mysite.com",
+    "openingHours": "Horaires d'ouverture",
+    "mondayFriday": "Lundi - Vendredi: 9h00 - 18h00",
+    "saturday": "Samedi: 10h00 - 16h00",
+    "sunday": "Dimanche: Fermé",
+    "footer": "Nous sommes impatients de vous aider. À bientôt!"
+  },
+  "getSingleCar": {
+    "carIdNotDefined": "ID de la voiture n'est pas défini",
+    "carIdNotDefined2": "ID de la voiture n'est pas défini",
+    "phone": "Téléphone",
+    "email": "Email",
+    "startDate": "Date de début",
+    "endDate": "Date de fin",
+    "name": "Nom",
+    "reserve": "Réserver maintenant",
+    "reservationForm": "Réservez cette voiture",
+    "confirmReservation": "Confirmer la réservation",
+    "reservationDetails": "Détails de la réservation"
+  }
+}

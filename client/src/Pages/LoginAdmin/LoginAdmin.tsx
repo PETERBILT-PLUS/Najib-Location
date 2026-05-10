@@ -3,7 +3,9 @@ import { type FormikHelpers, useFormik } from "formik";
 import { type ILoginAdmin, loginSchema } from "../../Configurations/YupSchemas/LoginAdmin.schema.ts";
 import axios, { type AxiosResponse } from "axios";
 import { toast } from "react-toastify";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import { HiUser, HiKey } from "react-icons/hi";
+
 
 function LoginAdmin() {
     const SERVER: string = import.meta.env.VITE_SERVER as string;
@@ -40,31 +42,65 @@ function LoginAdmin() {
 
     return (
         <main className="min-h-screen flex flex-col justify-center items-center p-4">
-            <h1 className="text-gray-500 text-center text-2xl lg:text-3xl pb-16">Login Admin</h1>
+            <h1 className="text-gray-700 text-center text-2xl lg:text-3xl pb-16">Login Admin</h1>
             <div className="grid grid-cols-1 md:grid-cols-12 w-full max-w-4xl">
+
+
                 <form onSubmit={handleSubmit} autoComplete="off" className="shadow-2xl col-span-1 md:col-start-4 md:col-span-6 flex flex-col gap-4 bg-white p-6 rounded-xl">
                     <div>
-                        <div className="mb-2 block">
-                            <Label htmlFor="email">Your email</Label>
-                        </div>
-                        <TextInput id="email" name="email" value={values.email} onBlur={handleBlur} onChange={handleChange} type="email" placeholder="e-mail" />
-                        {errors.email && touched.email && <h4 className="text-sm text-red-600 pt-3">{errors.email}</h4>}
+                        <Label htmlFor="email" value="Adresse email" />
+
+                        <TextInput
+                            id="email"
+                            name="email"
+                            icon={HiUser}
+                            placeholder="admin@domain.com"
+                            value={values.email}
+                            onChange={handleChange}
+                            onBlur={handleBlur}
+                            color={errors.email && touched.email ? "failure" : "gray"}
+                            helperText={
+                                errors.email && touched.email ? (
+                                    <span className="text-red-500">{errors.email}</span>
+                                ) : "Choisissez une adresse email valide"
+                            }
+                            sizing="lg"
+                        />
+
                     </div>
-                    <div className="pb-4">
-                        <div className="mb-2 block">
-                            <Label htmlFor="password1">Mot De Passe</Label>
-                        </div>
-                        <TextInput id="password" name="password" type="password" placeholder="Mot De Passe" value={values.password} onBlur={handleBlur} onChange={handleChange} />
-                        {errors.password && touched.password && <h4 className="text-sm text-red-600 pt-3">{errors.password}</h4>}
+                    <div>
+                        <Label htmlFor="password" value="Mot de passe" />
+
+                        <TextInput
+                            id="password"
+                            name="password"
+                            icon={HiKey}
+                            placeholder="admin123"
+                            value={values.password}
+                            onChange={handleChange}
+                            onBlur={handleBlur}
+                            autoComplete="new-password"
+                            color={errors.password && touched.password ? "failure" : "gray"}
+                            helperText={
+                                errors.password && touched.password ? (
+                                    <span className="text-red-500">{errors.password}</span>
+                                ) : "Choisissez un mot de passe fort"
+                            }
+                            sizing="lg"
+                        />
+
                     </div>
-                    <div className="mb-8">
-                        <p style={{ fontSize: "1em" }}>
-                            Crée us compte Admin<Link style={{ fontSize: "1em", textDecoration: "underline" }} to="/register-admin">Register</Link>
-                        </p>
-                    </div>
-                    <Button type="submit">{isSubmitting ? (
-                        <Spinner size="md" />
-                    ) : ("Enregistrer")}</Button>
+
+                    <Button
+                        type="submit"
+                        isProcessing={isSubmitting}
+                        disabled={isSubmitting}
+                        className="mt-5 w-full h-16 text-white bg-sky-500 hover:bg-sky-700 transition-colors duration-200"
+                        size="lg"
+                    >
+                        {isSubmitting ? "Enregistrement..." : "Créer un compte"}
+                    </Button>
+
                 </form>
             </div>
         </main>
